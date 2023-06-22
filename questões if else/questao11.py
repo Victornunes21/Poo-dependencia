@@ -10,4 +10,4 @@ elif IMC == 18.5 or IMC < 25.5:
 elif IMC == 25.5 or IMC <= 30:
     print("Bixu, toma cuidado! você esta acima do peso!")
 elif IMC > 30:
-    print("Boy! para de comer tu já ta obeso!")
+    print("Boy! Que poha tu ta comendo!")
