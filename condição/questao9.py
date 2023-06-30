@@ -11,3 +11,5 @@ elif pagam == 3:
 elif pagam == 4:
     novop = preco + (preco * 10/100)
     print("Brthe, o preço deu uma aumentada, agora custa", novop)
+else:
+    print("Número invalido!")
