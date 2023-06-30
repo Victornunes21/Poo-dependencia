@@ -1,8 +1,9 @@
+import math
 a = float(input('Valor de A: '))
 b = float(input('Valor de B: '))
 c = float(input('Valor de C: '))
 delta = (b**2) - (4*a*c)
-import math
+
 if delta < 0:
     print('Não possui raízes reais.')
 elif delta == 0:
