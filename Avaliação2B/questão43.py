@@ -1,21 +1,34 @@
-slr = 0 
+
+
 mulher = 0
-for i in range(1,6):
-    idade = int(input("Informe a sua idade: "))
-    sex = input("informe seu sexo: ")
-    salario = float(input("Mnada ai teu salario: "))
-    
-    slr += salario
-    mediaS = slr / 5
+slr = 0
+acmS = 0 
+menorS = 0
+maiorS = 0
+for i in range(1,11):
+    salario = int(input("Infome seu salario: "))
+    idade = int(input("Informe sua idade: "))
+    sex = input("Informe seu sexo: ")
+
+    acmS += salario
     if i == 1:
         maior = menor = idade
-        if maior > idade:
-            maiorIdade = maior
-        elif menor < idade:
-            menorIdade = menor
+    if idade > maior:
+        maior = idade
+    if idade < menor:
+        menor = idade
+
     if sex == "f" and salario <= 200:
         mulher += 1
-print(f"A media dos salarios digitados foram {mediaS}")
-print(f"A maior idade digitada foi {maiorIdade} e a menor foi {menorIdade}")
-print(f"A quantidade de mulheres com salario de até 200 conto foi de {mulher}")  
-    
+
+    if i == 1:
+       menorS = maiorS = salario
+    if salario < menorS:
+        menorS = salario
+        sexoM = sex
+        idadeM = idade
+         
+print(f"O menor salario foi de {menorS} e a pessoa tem {idadeM} anos e é do sexo {sexoM}")
+print(f"A media dos salarios foram de {acmS/10}")
+print(f"A quantidade de mulheres com salario de ate 200R$ foi de {mulher} mulheres")
+print(f"A menor idade coletada foi {menor} e a maior idade foi {maior}") 
